@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?4x9gg6');
+	src:url('fonts/icomoon.eot?#iefix4x9gg6') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?4x9gg6') format('truetype'),
+		url('fonts/icomoon.woff?4x9gg6') format('woff'),
+		url('fonts/icomoon.svg?4x9gg6#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-plus:before {
+	content: "\e600";
+}
+.icon-instagram:before {
+	content: "\e601";
+}
+.icon-twitter:before {
+	content: "\e602";
+}
+.icon-facebook:before {
+	content: "\e603";
+}
+.icon-dollar:before {
+	content: "\e604";
+}
+.icon-heart:before {
+	content: "\e9da";
+}
+.icon-cancel-circle:before {
+	content: "\ea0d";
+}
+.icon-play2:before {
+	content: "\ea15";
+}
+.icon-loop:before {
+	content: "\ea2d";
+}
+.icon-circle-right:before {
+	content: "\ea42";
+}
+.icon-circle-left:before {
+	content: "\ea44";
+}

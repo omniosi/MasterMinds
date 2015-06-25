@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    {block:Description}
+    <meta name="description" content="{MetaDescription}" />
+    {/block:Description}
+    <title>{block:TagPage}{Tag} posts - {/block:TagPage} {block:SearchPage}{lang:Search results for SearchQuery} - {/block:SearchPage}{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- <link rel="shortcut icon" href="{Favicon}"> -->
+    <link rel="shortcut icon" href="http://static.tumblr.com/b2vkqlh/R10nqczox/banknote-with-dollar-sign.png">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+    {block:Hidden}
+    <meta name="color:Menu bar background" content="#fff"/>
+    <meta name="color:Menu bar text color" content="#222"/>
+    <meta name="if:Transparent menu bar" content="0"/>
+    <meta name="if:Bold title" content="0"/>
+    <meta name="image:Background image" content=""/>
+    <meta name="select:Body font" content="Cabin" title="Cabin">
+    <meta name="select:Body font" content="Source Sans Pro" title="Source Sans Pro">
+    <meta name="select:Body font" content="Droid Serif" title="Droid Serif">
+    <meta name="select:Body font" content="Lato" title="Lato">
+    <meta name="select:Body font" content="Vollkorn" title="Volkorn">
+    <meta name="select:Body font" content="Merriweather" title="Merriweather">
+    <meta name="select:Body font" content="PT Sans" title="PT Sans">
+    <meta name="select:Body font" content="Roboto Slab" title="Roboto Slab">
+    <meta name="select:Body font" content="Raleway" title="Raleway">
+    <meta name="select:Body font" content="Varela" title="Varela">
+    <meta name="select:Body font" content="Varela Round" title="Varela Round">
+    <meta name="select:Body font" content="Open Sans" title="Open Sans">
+    <meta name="select:Body font" content="Arial" title="Arial">
+    <meta name="select:Body font" content="Georgia" title="Georgia">
+    <meta name="select:Header font" content="Open Sans" title="Open Sans">
+    <meta name="select:Header font" content="Source Sans Pro" title="Source Sans Pro">
+    <meta name="select:Header font" content="Cabin" title="Cabin">
+    <meta name="select:Header font" content="Droid Serif" title="Droid Serif">
+    <meta name="select:Header font" content="Lato" title="Lato">
+    <meta name="select:Header font" content="Vollkorn" title="Volkorn">
+    <meta name="select:Header font" content="Merriweather" title="Merriweather">
+    <meta name="select:Header font" content="PT Sans" title="PT Sans">
+    <meta name="select:Header font" content="Roboto Slab" title="Roboto Slab">
+    <meta name="select:Header font" content="Raleway" title="Raleway">
+    <meta name="select:Header font" content="Varela" title="Varela">
+    <meta name="select:Header font" content="Varela Round" title="Varela Round">
+    <meta name="select:Header font" content="Arial" title="Arial">
+    <meta name="select:Header font" content="Georgia" title="Georgia">
+    <meta name="select:Pattern style" content="" title="None">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/wAbmwf0gp/squairy.png" title="Squairy">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/exAmwf0he/p5.png" title="P5">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/xplmwf0ia/worn_dots.png" title="Worn Dots">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/rdPmwf0j3/first_aid_kit.png" title="First Aid Kit">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/AF2mwf0jt/debut_dark.png" title="Debut Dark">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/7vTmwf0kl/dark_fish_skin.png" title="Dark Fish Skin">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/n0Smwf0lh/dark_geometric.png" title="Dark Geometric">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/3Nbmwf0m8/classy_fabric.png" title="Classy Fabric">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/M3rmwf0mw/gplaypattern.png" title="Gplay">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/GPWmwf0ni/arches.png" title="Arches">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/LdMmwf0o5/plaid.png" title="My Little Plaid">
+    <meta name="select:Pattern style" content="http://static.tumblr.com/gmlcyjd/chcmwf0p3/subtle_zebra_3d.png" title="Subtle Zebra">
+    <meta name="select:Layout type" content="three-col" title="3 Columns">
+    <meta name="select:Layout type" content="two-col" title="2 Columns">
+    <meta name="select:Layout type" content="one-col" title="1 Column">
+    <meta name="text:Menu footer text" content=""/>
+    <meta name="text:Website link" content=""/>
+    <meta name="text:Shop link" content=""/>
+    <meta name="text:Facebook link" content=""/>
+    <meta name="text:Twitter link" content=""/>
+    <meta name="text:Twitter Search link" content=""/>
+    <meta name="text:Google Plus link" content=""/>
+    <meta name="text:Youtube link" content=""/>
+    <meta name="text:Vimeo link" content=""/>
+    <meta name="text:Pinterest link" content=""/>
+    <meta name="text:Dribbble link" content=""/>
+    <meta name="text:Instagram link" content=""/>
+    <meta name="text:SoundCloud link" content=""/>
+    <meta name="text:Spotify link" content=""/>
+    <meta name="text:LinkedIn link" content=""/>
+    <meta name="text:Flickr link" content=""/>
+    <meta name="text:Medium link" content=""/>
+    <meta name="text:Vine link" content=""/>
+    <meta name="text:VK link" content=""/>
+    <meta name="text:Picasa link" content=""/>
+    <meta name="text:GitHub link" content=""/>
+    <meta name="text:LastFm link" content=""/>
+    <meta name="text:Blogger link" content=""/>
+    <meta name="text:Google Analytics ID" content=""/>
+    <meta name="text:Extra Scripts" content=""/>
+    {/block:Hidden}
+    <!-- <link rel="stylesheet" type="text/css" href="//static.tumblr.com/vexeq8y/B2enmrkl5/master.css"> -->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="//static.tumblr.com/vexeq8y/KkEnlzwas/ie.css">
+    <![endif]-->
+    <link href='//fonts.googleapis.com/css?family={select:Body Font}' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family={select:Header Font}' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- icon font -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+    body {
+      background-color: #000;
+      /*font-family: {select:Body Font}, Arial, sans-serif;}*/
+      font-family: 'Droid Sans', Arial, sans-serif; }
+    h1, h2, h3, h4, .post-qoute blockquote, .search-results, .menu, .menu .nav-search form input, .menu-icon .title {font-family: {select:Header Font}, Arial, sans-serif;}
+    {block:IfBackgroundImageImage}
+    #bg {position:fixed; top: 0px; width:100%; height:100%; background: url('{image:Background Image}') center center no-repeat; background-size: cover;}
+    {/block:IfBackgroundImageImage}
+    a, a:active, cite {color: {AccentColor};}
+    .post-link .link h2 {color: #fff; background: {AccentColor};}
+    .top-bar { {block:IfNotTransparentMenuBar}background: {color:Menu Bar Background}{/block:IfNotTransparentMenuBar}{block:IfTransparentMenuBar} background: rgba(0,0,0,0); {/block:IfTransparentMenuBar};}
+    .menu-close { background: {color:Menu Bar Background};}
+    .top-bar .top-title h1 a, .menu-icon .title {color: {color:Menu Bar Text Color};}
+    .menu-icon span, .menu-icon span:before, .menu-icon span:after {background-color: {color:Menu Bar Text Color};}
+    .grid article.logo h1 a, .grid article.logo h2  {color: {TitleColor};}
+    .pace .pace-progress {background: {color:Menu Bar Text Color};}
+    {CustomCSS}
+    /*custom theme css*/
+    html{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    *{
+        -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+    #billboard{
+      /*height: 700px;*/
+      background: #000 url(http://static.tumblr.com/b2vkqlh/h9nnq09cy/billboard_img.jpg) no-repeat;
+      background-position: center;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+    #poster{
+      width: 50%;
+      margin: 0 auto;
+      /*padding: 15% 0 10%;*/
+      padding: 8% 0 2%;
+    }
+    #poster img{width: 100%;margin-bottom: 2%;}
+    #poster #playbtn{
+      position: relative;
+    }
+    #poster #playbtn .ctaplay,
+    #poster #playbtn .ctatext{
+      display: inline-block;
+      /*float: left;*/
+      width: 50%;
+    }
+    #poster #playbtn .ctaplay{
+      position: relative;
+      left: 15%;
+      width: 25%;
+    }
+    #poster #playbtn .ctatext{
+      position: absolute;
+      top: 30%;
+      width: 45%;
+      left: 36%;
+    }
+    .top-bar{
+      position: relative;
+      /*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #bcd9e8;
+      color: #40607b;
+      height: 70px;
+    }
+    .top-bar a{
+      color: #40607b;
+    }
+    .top-bar a:hover{
+      color: #fff;
+    }
+    .mymenu,
+    .mysocial{
+        display: inline-block;
+        /*width: 50%;*/
+        height: 70px;
+    }
+    .mymenu{
+        margin-left: 1%;
+    }
+    .mysocial{
+        margin-right: 1%;
+      /*display: inline-block;*/
+      /*vertical-align: top;*/
+      position: absolute;
+      right: 0;
+      top: 0;
+      /*padding: 2.5%;*/
+      height: 100%;
+      width: 50%;
+      float: right;
+        text-align: right;
+        margin-right: 1%;
+    }
+    .mysocial i{
+        padding-right: 1em;
+        font-size: 1.25em;
+    }
+    .mysocial span,
+    #photolink,
+    #videolink,
+    #synopsislink{
+        /*padding: 2.5% 2%;*/
+        /*padding: 1em 2%;*/
+        border-right: solid 1px #75B3BC;
+        display: inline-block;
+        letter-spacing: 0.06em;
+        width: 100px;
+        height: 70px;
+        /*background: transparent url(http://static.tumblr.com/b2vkqlh/D57nq84ia/mm_sprites_v3.png) no-repeat;*/
+        background: transparent url(http://static.tumblr.com/b2vkqlh/mGynqeqgb/mm-nav_sprites_line.png) no-repeat;
+        -webkit-background-size: 1200px auto;
+        background-size: 1200px auto;
+        overflow: hidden;
+    }
+    #photolink{ background-position: -25px -15px; }
+    #videolink{ background-position: -327px -15px; }
+    #synopsislink{ background-position: -616px -15px; border: none; }
+    #photolink.set,
+    #photolink:hover,
+    #photolink:active
+    { background-position: -175px -15px; }
+    #videolink.set,
+    #videolink:hover,
+    #videolink:active
+    { background-position: -477px -15px; }
+    #synopsislink.set,
+    #synopsislink:hover,
+    #synopsislink:active
+    { background-position: -766px -15px; }
+
+    #photolink:hover,
+    #videolink:hover,
+    #synopsislink:hover{
+        /*color: #010101;*/
+        /*border-bottom: solid 2px #010101;*/
+        /*text-decoration: underline;*/
+        cursor: pointer;
+    }
+    .mysocial i,
+    .mysocial span{
+        /*padding: 9.5% 3%;*/
+        /*padding: 1.45em 3%;*/
+        padding: 1.45em 2%;
+        letter-spacing: 0.06em;
+        text-transform: none;
+        vertical-align: top;
+    }
+    .mysocial i:hover,
+    .mysocial span:hover{
+       /*color: #010101;*/
+       color: #fff;
+        cursor: pointer;
+    }
+    .mysocial span{ background-position: -905px -15px; padding: 0; border: none; width: 140px; margin: 0 2.5%; }
+    .mysocial span:hover{ background-position: -1055px -15px; }
+    /*libs*/
+  .rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    }
+
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    }
+    .rlslides .fa-stack-1x{
+        line-height: 1.4em;
+        left: 5%;
+    }
+    .rslides_nav{
+        z-index: 3;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        text-indent: -9999px;
+        overflow: hidden;
+        text-decoration: none;
+        height: 70px;
+        width: 35px;
+        /*background: rgba(0,0,0,0.35) url() no-repeat left top;*/
+        /*margin-top: -35px;*/
+        /*margin-top: -4%;*/
+        /*margin-top: -37.5px;*/
+        margin-top: -5%;
+    }
+    .rslides_nav:hover{
+        /*background-color: rgba(0,0,0,0.75);*/
+    }
+    a.rslides_nav.prev,
+    a.rslides_nav.next{
+      /*background: url(http://static.tumblr.com/b2vkqlh/VTunqdgnl/arrow_sprites.png) no-repeat;*/
+      /*background: url(http://static.tumblr.com/b2vkqlh/Y8Unqdj10/arrows_sprite.png) no-repeat;*/
+      background: url(http://static.tumblr.com/b2vkqlh/7a7nqep4q/arrows_sprite-line.png) no-repeat;
+      /*background: url(http://static.tumblr.com/b2vkqlh/rXPnqetw1/arrow_sprite-line.png) no-repeat;*/
+      -webkit-background-size: 400% 100%;
+      background-size: 400% 100%;
+      /*-webkit-background-size: 150px;*/
+      /*background-size: 150px;*/
+      background-origin: border-box;
+      background-position: left top;
+      /*width: 75px;*/
+      /*height: 75px;*/
+      /*width: 12%;*/
+      width: 10%;
+      /*height: 35%;*/
+      height: 0;
+      padding-bottom: 10%;
+      -webkit-transition: none;
+      -moz-transition: none;
+      transition: none;
+    }
+    a.rslides_nav.prev{
+      /*margin-left: 8px;*/
+      margin-left: 1%;
+      background-position: left top;
+    }
+    a.rslides_nav.next{
+        left: auto;
+        background-position: 33.333% top ;
+        right: 1%;
+    }
+    /*a.rslides_nav.prev:hover{ background-position: left -76px; }*/
+    /*a.rslides_nav.next:hover{ background-position: right -76px; }*/
+    a.rslides_nav.prev:hover{ background-position: 66.667% top; }
+    a.rslides_nav.next:hover{ background-position: 100% top; }
+    #photosec,
+    #videosec{
+        position: relative;
+        /*position: absolute;*/
+    }
+    #videosec .copy{
+        text-align: center;
+        /*font-family: 'Droid Sans', Arial, sans-serif;*/
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        background: transparent url(http://static.tumblr.com/b2vkqlh/pBnnq0a6d/play_btn.png) no-repeat;
+        position: absolute;
+        width: 100%;
+        /*padding-top: 160px;*/
+        padding-top: 20%;
+        -webkit-background-size: 15% auto;
+        background-size: 15% auto;
+        background-position: 50% 50%;
+        text-transform: uppercase;
+    }
+    #videosec .copy p{
+        /*margin-top: 0;*/
+        /*position: relative;*/
+        /*top: -10px;*/
+        font-size: 150%;
+        line-height: 120%;
+    }
+    #mygallery a:hover,
+    #videosec a:hover{
+        color:#fff;
+    }
+    #synopsissec{
+        /*background: #2BBEC1 url(http://static.tumblr.com/b2vkqlh/2dznq403p/synopsis_bg.jpg) no-repeat;*/
+        background: url(http://static.tumblr.com/b2vkqlh/2dznq403p/synopsis_bg.jpg) no-repeat;
+        /*-webkit-background-size: 100% auto;*/
+        /*background-size: 100% auto;*/
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        color: #010101;
+        font-family: 'Droid Sans', Arial, sans-serif;
+    }
+    #syntext{
+        /*width: 54%;*/
+        /*width: 60%;*/
+        width: 68%;
+        /*max-width: 85%;*/
+        /*background: #2BBEC1 url(http://static.tumblr.com/b2vkqlh/xpInq2e07/money_lft_synopsis.png) no-repeat;*/
+        /*-webkit-background-size: 100% auto;*/
+        /*background-size: 100% auto;*/
+        font-family: 'Droid Sans', Arial, sans-serif;
+        /*font-size: 0.75em;*/
+        font-size: 60%;
+        font-size: 100%;
+        line-height: 1.3em;
+        display: inline-block;
+        /*float: left;*/
+        padding: 6% 4% 4%;
+    }
+    #synopsissec img{
+        /*width: 40%;*/
+        width: 35%;
+        min-width: 18%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .grid{
+        margin: 0 auto 30px;
+    }
+    .grid article{
+        padding: 0;
+    }
+    .grid.three-col{
+        max-width: 100%;
+    }
+    .grid.three-col article{
+        /*width: 33%;*/
+    }
+    .pusher #content-wrapper{
+        padding: 0;
+    }
+    .grid-item{
+        width: 33%;
+    }
+    .grid .post-content{
+        /*background: rgba(0,0,0,.35);*/
+        color: #fff;
+        font-size: 0.85em;
+        line-height: 1.2em;
+    }
+    .grid .post-content--padded{
+        background: rgba(0,0,0,.75);
+        padding: 6% 5%;
+    }
+    .grid .post-content--padded.overt{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: 20;
+        display: none;
+    }
+    .grid .post-content--padded p{
+        margin: 0.75em 0;
+    }
+    blockquote{
+        margin: 0.5em 0;
+    }
+    .grid article .actions{
+        padding: 5% 0.5%;
+        margin-top: 0;
+        position: relative;
+    }
+    .grid article .actions a{
+        color: #fff;
+        margin-right: 1%;
+        /*font-size: 2em;*/
+        font-size: 30px;
+        float: none;
+    }
+    .grid article .icon-love{
+        color: #fff;
+    }
+    .grid article .like_button{
+      width: 30px;
+      height: 30px;
+      position: relative;
+      /*left: 160px;*/
+      top: 8px;
+      right: 7%;
+      /*right: 22%;*/
+      display: inline-block !important;
+      margin-right: 8%;
+    }
+    .grid article .reblog_button,
+    .grid article .like_button{
+      opacity: 1;
+    }
+    .mypostshare{
+        width: 50%;
+        height: 30px;
+        position: relative;
+    }
+    .mypostslike{
+      float: right;
+      width: 50%;
+      text-align: right;
+      position: absolute;
+      top: 1em;
+      right: 0;
+    }
+    .grid article a.reblog_button{
+      display: inline-block !important;
+      float: right !important;
+      width: 30px !important;
+      height: 30px !important;
+    }
+    #legalcta,
+    #nolegalcta{
+     width: 40%;
+     margin: 25px 30% 50px;
+     text-transform: uppercase;
+     font-weight: bold;
+     text-align: center;
+     cursor: pointer;
+     position: relative;
+     z-index: 20;
+    }
+    #footer{
+     background: url(http://static.tumblr.com/b2vkqlh/FSmnq7hfq/footer_money.jpg) no-repeat;
+     background-size: 100%;
+     background-position: center bottom;
+     height: 400px;
+     position: relative;
+    }
+    #footer .copy{
+     background: url(http://static.tumblr.com/b2vkqlh/wPonq7igc/footer-block_copy.png) no-repeat;
+     background-size: 100%;
+     height: 100%;
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+     margin: 50px 25%;
+     background-position-y: 100%;
+    }
+    .photo .photo-wrapper-inner{
+      overflow: hidden;
+      position: relative;
+    }
+    .myhover{
+      background:
+        url(http://static.tumblr.com/b2vkqlh/uuonq5fwl/plus-icon.png) no-repeat,
+        url(http://static.tumblr.com/b2vkqlh/dMLnq7h8z/texture_over.png) no-repeat;
+      /*-webkit-background-size: 75px, 395px;*/
+      /*background-size: 75px, 395px;*/
+      -webkit-background-size: 75px, cover;
+      background-size: 75px, cover;
+      background-position: center 30%, center center;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      opacity: 0.5;
+      display: none;
+    }
+    .myhover:hover{
+      /*opacity:1;*/
+    }
+    .myhover.jason{background-color:#f76a00;background-color: rgba(247,107,0,.5)}
+    .myhover.owen{background-color:#47c1c2;background-color: rgba(71,194,194,.5)}
+    .myhover.kristen{background-color:#bb76e1;background-color: rgba(188,118,225,.5)}
+    .myhover.zach{background-color:#f5cb06;background-color: rgba(245,201,6,.5)}
+
+    .bottom-nav a{
+        margin: 2.5%;
+        display: inline-block;
+        float: left;
+        width: 45%;
+        vertical-align: top;
+    }
+    a{color:#fff;}
+    a:hover{color:#40607b;}
+
+    #moneylink{
+        position: relative;
+        z-index: 699;
+    }
+    #moneysec{
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      z-index: 599;
+      background-color: rgba(0,0,0,.5);
+    }
+    #moneysec .close{
+        background: url(fancybox_sprite.png) no-repeat;
+        position: absolute;
+        top: 27px;
+        right: -10px;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        z-index: 8040;
+        color: #fff;
+        font-size: 1.5em;
+    }
+    .drop{
+      position: relative;
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      width: 80px;
+      height: 50px;
+      /*width: 131px;*/
+      /*height: 56px;*/
+      /*background-color: grey;*/
+      background: url(http://static.tumblr.com/b2vkqlh/9YTnqd264/dollar-bill8.png) no-repeat;
+      background-size: 100%;
+     }
+
+   @media screen and (min-width: 1025px){
+      #syntext{
+        width: 68%;
+        font-size: 100%;
+      }
+      #synopsissec img{
+        width: 28%;
+      }
+
+   }
+
+    @media screen and (max-width: 1024px){
+      .posted,
+      .grid-item
+      { width: 50%; }
+      #footer .copy{
+        height: 8%;
+      }
+    }
+
+    /*@media screen and (max-width: 420px){*/
+    /*@media screen and (max-width: 515px){*/
+    @media screen and (max-width: 670px){
+        #poster{
+            width: 80%;
+        }
+        .top-bar{
+            height: auto;
+        }
+      .mymenu,
+      .mysocial{
+        display: block;
+        width: 100%;
+        float: none;
+        height: 70px;
+        text-align: center;
+      }
+      .mymenu{
+        border-bottom: solid 1px #75B3BC;
+        margin-left: 0;
+        height: 70px !important;
+      }
+      .mysocial{
+        position: relative;
+    }
+      .mysocial i{
+        padding: 1.275em 2%;
+        }
+        .rslides_nav{
+            /*margin-top: -18.75px;*/
+        }
+        a.rslides_nav.prev,
+        a.rslides_nav.next{
+            /*-webkit-background-size: 75px;*/
+            /*background-size: 75px;*/
+            /*width: 37.5px;*/
+            /*height: 37.5px;*/
+        }
+        /*a.rslides_nav.prev:hover{ background-position: left -38.5px; }*/
+        /*a.rslides_nav.next:hover{ background-position: right -38.5px; }*/
+
+      .posted,
+      .grid-item,
+      { width: 100%; }
+    .grid.three-col article{
+        /*width: 100%;*/
+        padding: 0;
+    }
+    #footer{
+        /*height: 40%;*/
+        /*height: 216px;*/
+        /*width: 100%;*/
+    }
+    #footer .copy{
+        height: 100%;
+        width: 80%;
+        margin: 50px 10%;
+      }
+    }
+    @media screen and (max-width: 500px){
+        #syntext{
+            font-size: 100%;
+            width: 100%;
+            padding-top: 50px;
+        }
+        #synimg{
+            width: 100% !important;
+            position: relative !important;
+        }
+        #synopsissec{
+            background-position: 43%;
+        }
+        .grid .post-content--padded.overt{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 360px){
+        #syntext{
+            background-position: -455px -113px;
+        }
+        #synopsissec{
+            background-position: 43%;
+        }
+    }
+    @media screen and (max-width: 324px){
+    /*@media screen and (max-width: 320px){*/
+        #poster{
+            width: 100%;
+        }
+        #syntext{
+            font-size: 100%;
+            width: 100%;
+            padding-top: 50px;
+        }
+        #synimg{
+            width: 100% !important;
+            position: relative !important;
+        }
+        .mymenu,
+        .mysocial{
+            height: auto;
+        }
+        .mysocial i{
+            padding: 1.275em 1%;
+        }
+        .mysocial span,
+        #photolink,
+        #videolink,
+        #synopsislink{
+            width: 30%;
+        }
+        #synopsislink{
+            width: 37%;
+        }
+        .mysocial span{
+            height: 50px;
+            /*background-position: -455px -35px;*/
+            width: 45%;
+            /*margin: 0 25%;*/
+        }
+    }
+
+
+  </style>
+  <!-- <script src="//static.tumblr.com/vexeq8y/2UWnlzwc5/plugins-top.js" async></script> -->
+</head>
+<body>
+  <div id="container" class="container">
+    <div id="billboard">
+      <div id="poster">
+        <img class="cast" src="http://static.tumblr.com/b2vkqlh/Vjunq7gyd/cast.png" alt="">
+        <img class="title" src="http://static.tumblr.com/b2vkqlh/VXInq5ds7/masterminds-movie.png" alt="Masterminds">
+        <img class="date" src="http://static.tumblr.com/b2vkqlh/j1Inq5pg9/in-theaters-august-19.png" alt="In Theatres August 19th">
+        <!-- <a href="https://www.youtube.com/watch?v=6XYVXJ2pVuk" class="fancybox-media"> -->
+        <a href="https://www.youtube.com/watch?v=hMmVOJ94m1E&index=1&list=PLdDt1fFoHmNz2jAidhIwTm6mDpnV3_g7K" class="fancybox-media">
+          <div id="playbtn">
+            <img class="ctaplay" src="http://static.tumblr.com/b2vkqlh/pBnnq0a6d/play_btn.png" alt="">
+            <img class="ctatext" src="http://static.tumblr.com/b2vkqlh/owMnq7jbp/watchtrailer_btn.png" alt="Watch Trailer">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="top-bar">
+        <div class="mymenu">
+          <span id="photolink" class="set" alt="Photos"></span>
+          <span id="videolink" alt="Videos"></span>
+          <span id="synopsislink" alt="Synopsis"></span>
+        </div>
+        <div class="mysocial">
+          <i id="moneylink" class="fa fa-usd" alt="$"></i>
+          <a href="{text:Twitter link}" target="_blank"><i class="fa fa-twitter" alt="Twitter"></i></a>
+          <a href="{text:Facebook link}" target="_blank"><i class="fa fa-facebook" alt="Facebook"></i></a>
+          <a href="{text:Vine link}" target="_blank"><i class="fa fa-vine" alt="vine"></i></a>
+          <a href="{text:Instagram link}" target="_blank"><i class="fa fa-instagram" alt="Instagram"></i></a>
+          <!-- <a href="{text:Google Plus link}" target="_blank"><i class="fa fa-google-plus" alt="Google Plus"></i></a> -->
+          <a href="{text:Twitter Search link}" target="_blank"><span alt="#MasterMinds"></span></a>
+        </div>
+    </div>
+    <div id="mygallery">
+      <div id="photosec">
+        <ul class="rslides">
+          <li><img src="http://static.tumblr.com/b2vkqlh/Ngwnq5clx/photos-mm_gallery.jpg" alt=""></li>
+          <li><img src="http://static.tumblr.com/b2vkqlh/ArRnqd2f7/photos-mm_gallery2.jpg" alt=""></li>
+          <li><img src="http://static.tumblr.com/b2vkqlh/hRKnqd2h4/photos-mm_gallery3.jpg" alt=""></li>
+          <li><img src="http://static.tumblr.com/b2vkqlh/e1Lnqd2i3/photos-mm_gallery4.jpg" alt=""></li>
+        </ul>
+      </div>
+      <div id="videosec">
+        <ul class="rslides">
+          <a href="https://www.youtube.com/watch?v=4V0Nqg79HUc&list=PLdDt1fFoHmNz2jAidhIwTm6mDpnV3_g7K&index=2"  class="fancybox-media"><li><div class="copy"><p>Teaser Trailer</p></div><img src="http://static.tumblr.com/b2vkqlh/SqVnq5coc/video-mm_gallery.jpg" alt=""></li></a>
+          <!-- <a href="https://www.youtube.com/watch?v=4V0Nqg79HUc&list=PLdDt1fFoHmNz2jAidhIwTm6mDpnV3_g7K&index=2"  class="fancybox-media"><li><div class="copy"><p>Featurette 2: <br>Interview with Zach?</p></div><img src="http://placehold.it/1250x430/759ad1/ffffff?text=Video+Two" alt=""></li></a> -->
+          <!-- <a href="https://www.youtube.com/watch?v=4V0Nqg79HUc&list=PLdDt1fFoHmNz2jAidhIwTm6mDpnV3_g7K&index=2"  class="fancybox-media"><li><div class="copy"><p>Featurette 3: <br>Interview with Owen?</p></div><img src="http://placehold.it/1250x430/8B17DE/ffffff?text=Video+Three" alt=""></li></a> -->
+        </ul>
+      </div>
+      <div id="synopsissec">
+        <div id="syntext">
+            <p>In this action comedy inspired by true events, directed by Jared Hess (Napoleon Dynamite; Nacho Libre), David Ghantt (Zach Galifianakis) discovers the true meaning of adventure far beyond his wildest dreams. He is an uncomplicated man stuck in a monotonous life. Day in and day out he drives an armored vehicle, transporting millions of other people’s money with no escape in sight. The only glimmer of excitement is his flirtatious work crush Kelly Campbell (Kristen Wiig) who soon lures him into the scheme of a lifetime.</p>
+            <p>Along with a group of half-brained criminals led by Steve Chambers (Owen Wilson) and an absurdly faulted heist plan, David manages the impossible and makes off with $17 million in cash…only problem is he foolishly hands the money over to this wild group of double crossers and has been set up to take the fall. With the bandits blowing the millions on lavish and ridiculous luxuries, they leave behind a glaring trail of evidence. Now on the lam and in over his head, David must dodge the authorities, evade a hilarious hit man, Mike McKinney (Jason Sudeikis), and try to turn the tables on the ones he trusted most.</p>
+            <b>Masterminds will be released domestically this summer by Relativity Studios.</b>
+        </div>
+        <img id="synimg" src="http://static.tumblr.com/b2vkqlh/pQVnq5dmr/zach_synopsis.png" alt="Zach Galifianakis in Masterminds">
+      </div>
+    </div>
+    <div class="pusher">
+        <div id="content-wrapper">
+            <div class="grid{block:IndexPage} {select:Layout Type}{/block:IndexPage}{block:SearchPage} one-col{/block:SearchPage}{block:PermalinkPage} permapage{/block:PermalinkPage}{block:SearchPage} searchpage{/block:SearchPage}">
+                <article class="logo logo-{AvatarShape}">
+                    {block:ShowAvatar}<a href="/"><img src="{PortraitURL-128}" alt="{Title}"></a>{/block:ShowAvatar}
+                    {block:ShowTitle}
+                    <h1><a href="/">{block:IfBoldTitle}<strong>{/block:IfBoldTitle}{Title}{block:IfBoldTitle}</strong>{/block:IfBoldTitle}</a></h1>
+                    {/block:ShowTitle}
+                    {block:IndexPage}
+                    {block:ShowDescription}
+                    {block:Description}
+                    <h2 {block:SearchPage}class="hide"{/block:SearchPage} >{Description}</h2>
+                    {/block:Description}
+                    {/block:ShowDescription}
+                    {block:SearchPage}<h2 class="search-results {block:NoSearchResults}hide{/block:NoSearchResults}">{lang:Search results for SearchQuery 2}</h2>{/block:SearchPage}
+                    {block:NoSearchResults}<h2 class="search-results">{lang:Sorry no posts found}</h2>{/block:NoSearchResults}
+                    {/block:IndexPage}
+                </article>
+                <div class="init-posts">
+                {block:Posts inlineMediaWidth="1280"}
+                    {block:Text}
+                    <article class="grid-item post-text" id="{PostID}">
+                        <div class="post-content">
+                            <div class="post-content--padded">
+                                {block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+                                {Body}
+                    {/block:Text}
+                    {block:Photo}
+                    <article class="grid-item post-photo" id="{PostID}">
+                        <div class="post-content">
+                        {block:IndexPage}
+                            <a href="{Permalink}#top">
+                                <img src="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+                                <div class="myhover {TagsAsClasses}"></div>
+                                <div class="post-content--padded overt">
+                                        {block:Caption}<p>{Caption}</p>{/block:Caption}
+                            </a>
+                        {/block:IndexPage}
+                        {block:PermalinkPage}{LinkOpenTag}
+                            <img id="top" src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+                            <div class="post-content--padded">
+                                    {block:Caption}<p>{Caption}</p>{/block:Caption}
+                            {LinkCloseTag}{/block:PermalinkPage}
+                    {/block:Photo}
+                    {block:Video}
+                    <article class="grid-item post-video" id="{PostID}">
+                        <div class="post-content">
+                        {block:IndexPage}
+                            <a href="{Permalink}#top">
+                                <div class="video-player">{Video-500}</div>
+                                <div class="myhover {TagsAsClasses}"></div>
+                                <div class="post-content--padded overt">
+                                    {block:Caption}<p>{Caption}</p>{/block:Caption}
+                            </a>
+                        {/block:IndexPage}
+                        {block:PermalinkPage}{LinkOpenTag}
+                                <div id="top" class="video-player">{Video-500}</div>
+                                <div class="post-content--padded">
+                                    {block:Caption}<p>{Caption}</p>{/block:Caption}
+                        {LinkCloseTag}{/block:PermalinkPage}
+                     {/block:Video}
+                    {block:Photoset}
+                    <article class="grid-item post-photoset" id="{PostID}">
+                        <div class="post-content">
+                        {block:IndexPage}
+                            <a href="{Permalink}#top">
+                                <div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">
+                                  {block:Photos}
+                                    <div class="photo-data">
+                                      <a rel="post-{PostID}" href="{PhotoURL-HighRes}" {block:Caption}title="{Caption}"{/block:Caption}>
+                                      <div class="pxu-photo">
+                                        <img alt="{PhotoAlt}" src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}">
+    <div class="myhover {TagsAsClasses}"></div>
+                                      </div>
+                                      </a>
+                                    </div>
+                                  {/block:Photos}
+                                </div>
+                                <div class="post-content--padded overt">
+                                    {block:Caption}<p>{Caption}</p>{/block:Caption}
+                            </a>
+                        {/block:IndexPage}
+                        {block:PermalinkPage}{LinkOpenTag}
+                                <div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">
+                                  {block:Photos}
+                                    <div class="photo-data">
+                                      <a rel="post-{PostID}" href="{PhotoURL-HighRes}" {block:Caption}title="{Caption}"{/block:Caption}>
+                                      <div class="pxu-photo">
+                                        <img alt="{PhotoAlt}" src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}">
+    <div class="myhover {TagsAsClasses}"></div>
+                                      </div>
+                                      </a>
+                                    </div>
+                                  {/block:Photos}
+                                </div>{LinkCloseTag}
+                                <div class="post-content--padded">
+                                    {block:Caption}<p>{Caption}</p>{/block:Caption}
+                        {LinkCloseTag}{/block:PermalinkPage}
+                    {/block:Photoset}
+                    {block:Panorama}
+                    <article class="grid-item post-panorama" id="{PostID}">
+                        <div class="post-content">
+                        {block:IndexPage}
+                            <a href="{Permalink}#top">
+                                <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />
+                                <div class="myhover {TagsAsClasses}"></div>
+                                <div class="post-content--padded overt">
+                                    {block:Caption}{Caption}{/block:Caption}
+                            </a>
+                        {/block:IndexPage}
+                        {block:PermalinkPage}{LinkOpenTag}
+                                <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />
+                                <div class="post-content--padded">
+                                    {block:Caption}{Caption}{/block:Caption}
+                        {LinkCloseTag}{/block:PermalinkPage}
+                    {/block:Panorama}
+                    {block:Quote}
+                    <article class="grid-item post-qoute" id="{PostID}">
+                        <div class="post-content">
+                            <div class="post-content--padded">
+                                <blockquote>"{Quote}"</blockquote>
+                                {block:Source}<cite>- {Source}</cite>{/block:Source}
+                    {/block:Quote}
+                    {block:Link}
+                    <article class="grid-item post-link" id="{PostID}">
+                        <div class="post-content">
+                            <a href="{URL}" target="_blank" class="link">
+                                <h2><i aria-hidden="true" data-icon="&#x2b04;"></i>{Name}</h2>
+                            </a>
+                            <div class="post-content--padded">
+                                {block:Description}{Description}{/block:Description}
+                    {/block:Link}
+                    {block:Chat}
+                    <article class="grid-item post-chat" id="{PostID}">
+                        <div class="post-content">
+                            <div class="post-content--padded">
+                                {block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+                                {Body}
+                                <div class="chat">
+                                    {block:Lines}
+                                        {block:Label}<p><span>{Label} </span>{/block:Label} {Line}</p>
+                                    {/block:Lines}
+                                </div>
+                    {/block:Chat}
+                    {block:Audio}
+                    <article class="grid-item post-audio" id="{PostID}">
+                        <div class="post-content">
+                            <div class="post-content--padded">
+                                {block:TrackName}<a href="{Permalink}"><h2>{TrackName}</h2></a>{/block:TrackName}
+                            </div>
+                                {block:AlbumArt}<img src="{AlbumArtURL}"/>{/block:AlbumArt}
+                                {AudioEmbed-400}
+                            <div class="post-content--padded">
+                                {block:Caption}<p>{Caption}</p>{/block:Caption}
+                    {/block:Audio}
+                    {block:Answer}
+                    <article class="grid-item post-answer" id="{PostID}">
+                        <div class="post-content">
+                            <div class="post-content--padded">
+                                <div class="question">
+                                    <div class="inside">
+                                        <div class="gw">
+                                            <div class="g one-fifth">
+                                                <img src="{AskerPortraitURL-96}">
+                                            </div>
+                                            <div class="g four-fifths">
+                                                <p class="title">{lang:Asker asked}:</p>
+                                                <p class="content">{Question}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {block:Answerer}
+                                    <div class="gw">
+                                        <div class="g one-fifth">
+                                            <img src="{AnswererPortraitURL-96}">
+                                        </div>
+                                        <div class="g four-fifths">
+                                            <p class="title">{Answerer} {lang:Answer}:</p>
+                                            <p class="content">{Answer}</p>
+                                        </div>
+                                    </div>
+                                    {/block:Answerer}
+                                    <div class="post-answer__reply">{Replies}</div>
+                                </div>
+                     {/block:Answer}
+                                {block:HasTags}
+                                <span class="tags">
+                                    <p>
+                                    {block:Tags}
+                                        <a href="{TagURL}">{Tag}</a>
+                                    {/block:Tags}
+                                    </p>
+                                </span>
+                                {/block:HasTags}
+                                <div class="actions">
+                                    <!-- <hr> -->
+    <div class="mypostshare">
+        <a href="https://plus.google.com/share?url={URLEncodedPermalink}" target="_blank" class="icon-googleplus" aria-hidden="true" data-icon="&#x47;"></a>
+        <a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" target="_blank" class="icon-twitter" aria-hidden="true" data-icon="&#x54;"></a>
+        <a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" target="_blank" class="icon-facebook" aria-hidden="true" data-icon="&#x46;"></a>
+    </div>
+    <div class="mypostslike">
+                                    <!-- <a href="{ReblogURL}" target="_blank" class="reblog_button" aria-hidden="true" data-icon="&#x292e;"></a> -->
+      {LikeButton color="white"}{ReblogButton color="white"}
+                                    <!-- <div class="like-wrap"> -->
+                                        <!-- <i class="icon-love" aria-hidden="true" data-icon="&#x2665;"></i> -->
+                                        <!-- {LikeButton color="black" size="14"} -->
+                                    <!-- </div> -->
+    </div>
+<!--                                    <div class="share-wrap">
+        <a href="#" class="share_button icon-share js-share action" aria-hidden="true"></a>
+        <a href="#" class="share_button icon-close js-share action" aria-hidden="true"></a>
+                                         <div class="share">
+                                            <a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" target="_blank" class="icon-twitter" aria-hidden="true" data-icon="&#x54;"></a>
+                                            <a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" target="_blank" class="icon-facebook" aria-hidden="true" data-icon="&#x46;"></a>
+                                            <a href="https://plus.google.com/share?url={URLEncodedPermalink}" target="_blank" class="icon-googleplus" aria-hidden="true" data-icon="&#x47;"></a>
+                                        </div>
+                                    </div>
+-->                                    <!-- <div class="date"> -->
+                                        <!-- {block:Date} -->
+                                        <!-- <a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}, {Year}</a> -->
+                                        <!-- {/block:Date} -->
+                                    <!-- </div> -->
+                                </div>
+                                {PostNotes-16}
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                {/block:Posts}
+                </div><!-- END POSTS -->
+            </div><!-- END CONTENT -->
+            {block:IndexPage}
+            <div class="bottom-nav {block:SearchPage}hide{/block:SearchPage}{block:TagPage}hide{/block:TagPage}">
+                <a href="#container" aria-hidden="true" data-icon="&#x25b2;" class="scroll-top{block:NoSearchResults} hide{/block:NoSearchResults}"></a>
+                <!-- <br> -->
+                <a href="#" class="load-more" aria-hidden="true" data-icon="&#x25bc;" ></a>
+            </div>
+            <div class="pagination {block:SearchPage}show{/block:SearchPage}{block:TagPage}show{/block:TagPage}">
+                {block:PreviousPage}
+                <a href="{PreviousPage}" class="prev" aria-hidden="true" data-icon="&#x25c4;"></a>
+                {/block:PreviousPage}
+                <a href="#" aria-hidden="true" data-icon="&#x25b2;" class="scroll-top{block:NoSearchResults} hide{/block:NoSearchResults}"></a>
+                {block:NextPage}
+                <!-- <a href="{NextPage}" class="next" aria-hidden="true" data-icon="&#x25ba;"></a> -->
+                <a href="{NextPage}" class="next"></a>
+                {/block:NextPage}
+            </div>
+            {/block:IndexPage}
+            {block:PermalinkPagination}
+            <div class="pagination show">
+                {block:PreviousPost}
+                <a href="{PreviousPost}" class="prev" aria-hidden="true" data-icon="&#x25c4;"></a>
+                {/block:PreviousPost}
+                {block:NextPost}
+                <a href="{NextPost}" class="next" aria-hidden="true" data-icon="&#x25ba;"></a>
+                {/block:NextPost}
+            </div>
+            {/block:PermalinkPagination}
+        </div>
+        <!--END CONTENT WRAPPER -->
+        <div id="legalcta">Show Legal</div>
+        <div id="nolegalcta" style="display:none">Hide Legal</div>
+        <div id="footer">
+            <div class="copy"></div>
+        </div>
+    </div>
+    <!-- END PUSHER -->
+    <!-- Money drop easter egg -->
+    <div id="moneysec" style="display:none">
+        <!-- <div class="close"></div> -->
+        <i id="moneyclose" class="fa fa-times-circle-o close"></i>
+        <div class="drop"></div>
+    </div>
+
+</div>
+<script>
+    var wordClose = "{lang:Close}";
+    var wordLoading = "{lang:Loading}";
+</script>
+<script src="//static.tumblr.com/vexeq8y/tJWnlzwcq/jquery.js"></script>
+<!-- <script src="//static.tumblr.com/vexeq8y/voEnlzwbm/plugins.js"></script> -->
+<!-- <script src="//static.tumblr.com/vexeq8y/KCYnlzwd5/app.js"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.53/responsiveslides.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+<!-- <script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/2.0b2.120519/jquery.infinitescroll.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+
+<!-- custom scripts -->
+  <script>
+    $(function() {
+        // Responsive Slides init
+      $(".rslides").responsiveSlides({
+        auto: false,
+        nav: true
+      });
+    // Fancybox media overlay init
+    $('.fancybox-media')
+    .attr('rel','media-gallery')
+    .fancybox({
+      openEffect : 'none',
+      closeEffect : 'none',
+      prevEffect : 'none',
+      nextEffect : 'none',
+
+      arrows : false,
+      helpers : {
+        media : {},
+        buttons : {}
+      },
+      aspectRatio : true,
+      margin: [60,20,20,20],
+      padding:0,
+      width:1024,
+      height:580
+    });
+    // section tabs setup
+    $('#videosec').fadeOut();
+    $('#synopsissec').fadeOut();
+    $('#photolink').on('click',function(){
+        $('#videosec').slideUp();
+        $('#synopsissec').slideUp();
+        $('#photosec').slideDown();
+        $('#videolink,#synopsislink').removeClass('set');
+        $(this).addClass('set');
+    });
+    $('#videolink').on('click',function(){
+        $('#photosec').slideUp().removeClass('set');
+        $('#synopsissec').slideUp().removeClass('set');
+        $('#videosec').slideDown().addClass('set');
+        $('#photolink,#synopsislink').removeClass('set');
+        $(this).addClass('set');
+    });
+    $('#synopsislink').on('click',function(){
+        $('#photosec').slideUp().removeClass('set');
+        $('#videosec').slideUp().removeClass('set');
+        $('#synopsissec').slideDown().addClass('set');
+        $('#videolink,#photolink').removeClass('set');
+        $(this).addClass('set');
+    });
+    // Masonry init
+    var $grid = $('.grid').masonry({
+        percentPosition: true,
+        itemSelector: '.grid-item'
+    });
+    // Layout Masonry after each image loads
+    $grid.imagesLoaded().progress(function(){
+        $grid.masonry('layout');
+    });
+    // $('#container a.load-more').on('click',function(){
+        // redo the overlay code
+        // after imagesLoaded?
+        // $grid.imagesLoaded().progress(function(){
+            // overt();
+        // });
+    // });
+    // $('.grid').on('load', '.post-content--padded',function(){
+        // $(this).slideUp();
+    // });
+    $('.grid').on('mouseenter','.grid-item',function(){
+        var $this = $(this);
+        var $padded = $('.post-content--padded.overt');
+        var $hovered = $('.myhover');
+        $this.find($padded).slideDown();
+        $this.find($hovered).fadeIn();
+    });
+    $('.grid').on('mouseleave','.grid-item',function(){
+        var $this = $(this);
+        var $padded = $('.post-content--padded.overt');
+        var $hovered = $('.myhover');
+        $this.find($padded).slideUp();
+        $this.find($hovered).fadeOut();
+    });
+    // footer functions
+    $('document').ready(function(){
+
+        function footclose(){
+           $('#footer').slideUp();
+           console.log("close ended!");
+        }
+    {block:IndexPage}
+        // var $footer = $('#footer');
+        if( isScrolledIntoView('#footer') ){
+            window.setTimeout(footclose, 5000);
+            console.log("close start!");
+        }else{
+    {/block:IndexPage}
+            window.setTimeout(footclose, 5000);
+            console.log("close started anyway!");
+    {block:IndexPage}
+        }
+
+        // function isScrolledIntoView(el){
+        //     var elemTop = el.getBoundingClientRect().top;
+        //     var elemBottom = el.getBoundingClientRect().bottom;
+
+        //     var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+        //     return isVisible;
+        // }
+        function isScrolledIntoView(elem){
+            var $elem = $(elem);
+            var $window = $(window);
+
+            var docViewTop = $window.scrollTop();
+            var docViewBottom = docViewTop + $window.height();
+
+            var elemTop = $elem.offset().top;
+            var elemBottom = elemTop + $elem.height();
+
+            return ( (elemBottom <= docViewBottom) && (elemTop >= docViewTop) );
+        }
+        {/block:IndexPage}
+
+        // ScrollTo source code
+        $.fn.scrollTo = function( target, options, callback ){
+          if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+          var settings = $.extend({
+            scrollTarget  : target,
+            offsetTop     : 50,
+            duration      : 500,
+            easing        : 'swing'
+          }, options);
+          return this.each(function(){
+            var scrollPane = $(this);
+            var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+            var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+            scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
+              if (typeof callback == 'function') { callback.call(this); }
+            });
+          });
+        }
+        // ScrollTo source code end
+});
+
+    // legal controls
+    $('#legalcta').on('click', function(){
+        $(this).hide();
+        $('#nolegalcta').show();
+      $('#footer').slideDown();
+      $('body').scrollTo('#footer', {offsetTop:'250'});
+    });
+    $('#nolegalcta').on('click', function(){
+        $(this).hide();
+        $('#legalcta').show();
+    // $('#footer').on('mouseout',function(){
+      $('#footer').slideUp();
+    });
+    // Money drop easter egg code
+    var money = document.getElementById("moneysec");
+var egg = document.getElementById("moneylink");
+var drop = document.getElementsByClassName("drop")[0];
+var close = document.getElementById("moneyclose");
+var rain;
+var dup;
+var dropd;
+var last;
+var most;
+var n;
+
+egg.onclick = pour;
+close.onclick = cleanup;
+
+function pour(){
+    stoprain();
+    money.style.display = "block";
+    rain = window.setInterval(clones, getRandomInt(11,33));
+    setTimeout(stoprain, 3000);
+};
+
+function stoprain() {
+    window.clearInterval(rain);
+}
+
+function getRandomInt(min, max){
+    return Math.floor( Math.random() * ( max-min ) ) + min;
+}
+
+function clones(){
+    dup = drop.cloneNode(true);
+    dup.style.left = getRandomInt(1,100) + "%";
+    money.appendChild(dup);
+    console.log("bill added.");
+
+    function completeHandler(){
+        last = document.getElementsByClassName("drop")[1];
+        money.removeChild(last);
+        console.log("bill removed!");
+    }
+
+    // TweenMax.to(dup, getRandomInt(4,7), {top:"120%",onComplete:completeHandler});
+    TweenMax.to(dup, getRandomInt(5,15), {top:"120%",onComplete:completeHandler});
+    var t1 = new TimelineMax({repeat: getRandomInt(2,10)});
+    t1.to(dup, getRandomInt(1,3),{left:"-="+getRandomInt(0,500),rotation:"+="+getRandomInt(0,180)})
+        .to(dup, getRandomInt(1,3),{left:"+="+getRandomInt(0,500),rotation:"-="+getRandomInt(0,180)});
+    var t2 = new TimelineMax({repeat: getRandomInt(2,10)});
+    t2.to(dup,getRandomInt(0.25,1),{height:0})
+        .to(dup,getRandomInt(0.25,1),{height:30})
+}
+
+function cleanup(){
+    most = document.getElementsByClassName("drop");
+    for (var i=1;i<most.length;i++){
+        money.removeChild(most[i]);
+        console.log("all bills removed!");
+    }
+    money.style.display = "none";
+    stoprain();
+}
+    // Money drop easter egg code end
+  });
+  </script>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
+  <style type="text/css">
+    .fancybox-custom .fancybox-skin {
+      box-shadow: 0 0 50px #222;
+    }
+  </style>
+
+{block:IfGoogleAnalyticsID}
+<script>
+var _gaq=[['_setAccount','{text:Google Analytics ID}'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+{/block:IfGoogleAnalyticsID}
+{block:IfExtraScripts}{text:Extra Scripts}{/block:IfExtraScripts}
+<!--Theme version 3.0.2-->
+<!--Background patterns courtesy of subtlepatterns.com-->
+</body>
+</html>

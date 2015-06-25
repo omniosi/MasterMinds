@@ -1,0 +1,33 @@
+#money{
+  height: 100%;
+}
+button#egg,
+button#close{
+  position: absolute;
+  z-index: 9999;
+  font-size: 2em;
+  width: 2.5em;
+}
+button#close{
+ z-index: 99999;
+}
+button#close{
+  right: 0;
+}
+.image{
+  /*width: 60px;*/
+  /*height: 30px;*/
+  /*border: solid transparent;*/
+  /*border-left-color: grey;*/
+  /*border-width: 20px;*/
+  /*background-color: grey;*/
+}
+.drop{
+  position: relative;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  width: 60px;
+  height: 30px;
+  background-color: grey;
+ }

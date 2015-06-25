@@ -1,0 +1,46 @@
+#money{
+  height: 100%;
+}
+button#egg,
+button#close{
+  position: absolute;
+  z-index: 9999;
+}
+button#close{
+  right: 0;
+}
+.image{
+  width: 30px;
+  height: 10px;
+  border: solid transparent;
+  border-left-color: grey;
+  border-width: 20px;
+}
+.sway{
+  -webkit-animation: sway 1s ease-in-out infinite alternate;
+  -moz-animation: sway 1s ease-in-out infinite alternate;
+  -o-animation: sway 1s ease-in-out infinite alternate;
+  animation: sway 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes sway { from { margin-left:-200%; transform: rotate(115deg); } to { margin-left:200%;  transform: rotate(30deg); } }
+@-moz-keyframes sway { from { margin-left:-200%; transform: rotate(115deg); } to { margin-left:200%;  transform: rotate(30deg); } }
+@-o-keyframes sway { from { margin-left:-200%; transform: rotate(115deg); } to { margin-left:200%;  transform: rotate(30deg); } }
+@keyframes sway { from { margin-left:-200%; transform: rotate(115deg); } to { margin-left:200%;  transform: rotate(30deg); } }
+
+.drop{
+  position: relative;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  /*animation: drop 7s ease-in-out infinite;*/
+  -webkit-animation: drop 7s ease-in-out;
+  -moz-animation: drop 7s ease-in-out;
+  -o-animation: drop 7s ease-in-out;
+  animation: drop 7s ease-in-out;
+}
+
+@-webkit-keyframes drop { from { top:-20%; } to { top:100%; } }
+@-moz-keyframes drop { from { top:-20%; } to { top:100%; } }
+@-o-keyframes drop { from { top:-20%; } to { top:100%; } }
+@keyframes drop { from { top:-20%; } to { top:100%; } }
