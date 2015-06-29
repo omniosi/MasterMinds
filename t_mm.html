@@ -158,7 +158,7 @@
     #billboard{
       /*height: 700px;*/
       /*background: #000 url(http://static.tumblr.com/b2vkqlh/h9nnq09cy/billboard_img.jpg) no-repeat;*/
-      background: #000 url(http://static.tumblr.com/b2vkqlh/PtLnqik3a/header_masteminds.jpg) no-repeat;
+      background: #fff url(http://static.tumblr.com/b2vkqlh/PtLnqik3a/header_masteminds.jpg) no-repeat;
       background-position: center top;
       -webkit-background-size: 100% auto;
       background-size: 100% auto;
@@ -201,22 +201,25 @@
       top: 48%;
       width: 45%;
       left: 36%;
+      background: url(http://static.tumblr.com/b2vkqlh/37gnqipq5/watchtrailer_btn.png) no-repeat;
+      background-size: 100%;
+      height: 25%;
     }
     .top-bar{
       position: relative;
       /*font-family: 'Yanone Kaffeesatz', sans-serif;*/
       font-weight: 700;
       text-transform: uppercase;
-      background: #c3dfeb;
-      color: #40607b;
+      background: #c2002f;
+      color: #fff;
       height: 70px;
       z-index: 30;
     }
     .top-bar a{
-      color: #40607b;
+      color: #fff;
     }
     .top-bar a:hover{
-      color: #fff;
+      color: #000;
     }
     .mymenu,
     .mysocial{
@@ -248,12 +251,12 @@
     #videolink,
     #synopsislink{
         /*padding: 1em 2%;*/
-        border-right: solid 1px #75B3BC;
+        border-right: solid 1px #910426;
         display: inline-block;
         letter-spacing: 0.06em;
         width: 100px;
         height: 70px;
-        background: transparent url(http://static.tumblr.com/b2vkqlh/63Nnqh0yj/mm-nav_sprites_line_rev.png) no-repeat;
+        background: transparent url(http://static.tumblr.com/b2vkqlh/RDAnqq3sr/mm-nav_sprites_line_r2.png) no-repeat;
         -webkit-background-size: 1200px auto;
         background-size: 1200px auto;
         overflow: hidden;
@@ -288,7 +291,7 @@
     }
     .mysocial i:hover,
     .mysocial span:hover{
-       color: #fff;
+        color: #000;
         cursor: pointer;
     }
     .mysocial span{ background-position: -905px -15px; padding: 0; border: none; width: 140px; margin: 0 2.5%; }
@@ -370,9 +373,9 @@
       background-size: 400% 100%;
       background-origin: border-box;
       background-position: left top;
-      width: 10%;
+      width: 6%;
       height: 0;
-      padding-bottom: 10%;
+      padding-bottom: 6%;
       -webkit-transition: none;
       -moz-transition: none;
       transition: none;
@@ -382,8 +385,8 @@
     .pagination a.prev,
     .pagination a.next
     {
-        width: 5%;
-        padding-bottom: 5%;
+        width: 6%;
+        padding-bottom: 6%;
         margin: 0 1%;
     }
     .bottom-nav a.scroll-top,
@@ -585,7 +588,8 @@
      /*z-index: 400;*/
     }
     #footer .copy{
-     background: url(http://static.tumblr.com/b2vkqlh/wPonq7igc/footer-block_copy.png) no-repeat;
+     /*background: url(http://static.tumblr.com/b2vkqlh/wPonq7igc/footer-block_copy.png) no-repeat;*/
+     background: url(http://static.tumblr.com/b2vkqlh/lBlnqket4/footer-block_copy.png) no-repeat;
      background-size: 100%;
      height: 80%;
      width: 50%;
@@ -598,12 +602,14 @@
     #mpaa,
     #filmratings{
         position: absolute;
-        /*bottom: 65px;*/
-        bottom: 50px;
-        left: 42%;
+        bottom: 80px;
+        left: 45.5%;
+        width: 3%;
+        text-indent: -9999px;
     }
     #filmratings{
-        left: 53%;
+        left: 49.125%;
+        width: 5.25%;
     }
     .photo .photo-wrapper-inner{
       overflow: hidden;
@@ -696,9 +702,42 @@
     }
 
     @media screen and (max-width: 670px){
+        #billboard{
+            background: url(http://static.tumblr.com/b2vkqlh/2hfnqq4dz/header_masteminds_mobile.jpg) no-repeat;
+             -webkit-background-size: 100% auto;
+            background-size: 100% auto;
+        }
+        #billboard video{
+            display: none;
+        }
         #poster{
-            /*width: 80%;*/
+            width: 75%;
             padding: 4% 0 3%;
+        }
+        #poster #playbtn .ctaplay,
+        #poster #playbtn .ctatext{
+            display: block;
+            float: none;
+            position: relative;
+        }
+        #poster #playbtn .ctaplay{
+            left: 50%;
+            width: 22%;
+            margin-left: -9%;
+        }
+        #poster #playbtn .ctatext{
+            background: url(http://static.tumblr.com/b2vkqlh/iUAnqq5c1/watchtrailer_btn_mobile.png) no-repeat;
+            background-size: 100%;
+            /*width: 16%;*/
+            width: 50px;
+            /*height: 0;*/
+            height: 35px;
+            left: 50%;
+            /*margin-left: -6.25%;*/
+            /*margin-left: -25px;*/
+            margin-left: -22px;
+            /*padding-bottom: 16%;*/
+            padding-bottom: 0;
         }
         .top-bar{
             /*height: auto;*/
@@ -713,7 +752,7 @@
         text-align: center;
       }
       .mymenu{
-        border-top: solid 1px #75B3BC;
+        border-top: solid 1px #910426;
         margin-left: 0;
         height: 70px !important;
         top: 70px;
@@ -747,31 +786,31 @@
         padding: 0;
     }
     #synopsissec{
-        /*background: url(http://static.tumblr.com/b2vkqlh/Aimnqh8fa/synopsis_bg_sm.jpg) no-repeat;*/
-        /*-webkit-background-size: cover;*/
-        /*background-size: cover;*/
-        /*background-position: top center;*/
     }
     #footer{
         background: #000 url(http://static.tumblr.com/b2vkqlh/2sZnqh7tf/footer_money_sm.jpg) no-repeat;
         background-size: 100%;
         background-position: center bottom;
         /*height: 40%;*/
-        height: 200px;
+        height: 230px;
     }
     #footer .copy{
-        height: 75%;
-        width: 80%;
-        margin: 0 10% 50px;
+        background: url(http://static.tumblr.com/b2vkqlh/OADnqkhyh/footer-block_copy_mobile.png) no-repeat;
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        margin: 0 0% 50px;
         font-size: 50%;
       }
-      #mpaa,
-      #filmratings{
-        bottom: 30px;
-            left: 40%;
-      }
+        #mpaa,
         #filmratings{
-            left: 53%;
+            bottom: 25px;
+            left: 31%;
+            width: 13%;
+        }
+        #filmratings{
+            left: 46%;
+            width: 24%;
         }
     }
     @media screen and (max-width: 500px){
@@ -802,7 +841,7 @@
     @media screen and (max-width: 324px){
         #poster{
             /*width: 100%;*/
-            padding: 4% 0 1%;
+            /*padding: 4% 0 1%;*/
         }
         #syntext{
             font-size: 100%;
@@ -831,7 +870,6 @@
         }
         .mysocial span{
             height: 50px;
-            /*background-position: -455px -35px;*/
             width: 45%;
         }
     }
@@ -844,21 +882,19 @@
   <div id="container" class="container">
     <div id="billboard">
         <video preload="auto" autoplay poster="http://static.tumblr.com/b2vkqlh/PtLnqik3a/header_masteminds.jpg" width="100%">
-            <source src="http://omnio.us/test/mm/MM_4-3c-HD_1080p.webm" type="video/webm">
-            <source src="http://omnio.us/test/mm/MM_4-3c-HD_1080p.ogv" type="video/ogg">
-            <source src="http://omnio.us/test/mm/MM_4-3c-HD_1080p.mp4" type="video/quicktime">
+            <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.webm" type="video/webm">
+            <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.ogv" type="video/ogg">
+            <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.mp4" type="video/quicktime">
         </video>
       <div id="poster">
         <img class="cast" src="http://static.tumblr.com/b2vkqlh/Vjunq7gyd/cast.png" alt="">
         <img class="title" src="http://static.tumblr.com/b2vkqlh/qLpnqiktj/masterminds-movie.png" alt="Masterminds">
         <img class="date" src="http://static.tumblr.com/b2vkqlh/g9mnqikt4/in-theaters-august-19.png" alt="In Theatres August 19th">
-        <!-- <a href="https://www.youtube.com/watch?v=6XYVXJ2pVuk" class="fancybox-media"> -->
-        <!-- <a href="https://www.youtube.com/watch?v=hMmVOJ94m1E&index=1&list=PLdDt1fFoHmNz2jAidhIwTm6mDpnV3_g7K" class="fancybox-media"> -->
         <a href="http://youtu.be/kaNz-GEzqxY" class="fancybox-media">
           <div id="playbtn">
             <img class="ctaplay" src="http://static.tumblr.com/b2vkqlh/pBnnq0a6d/play_btn.png" alt="">
-            <!-- <img class="ctatext" src="http://static.tumblr.com/b2vkqlh/owMnq7jbp/watchtrailer_btn.png" alt="Watch Trailer"> -->
-            <img class="ctatext" src="http://static.tumblr.com/b2vkqlh/37gnqipq5/watchtrailer_btn.png" alt="Watch Trailer">
+            <!-- <img class="ctatext" src="http://static.tumblr.com/b2vkqlh/37gnqipq5/watchtrailer_btn.png" alt="Watch Trailer"> -->
+            <div class="ctatext"></div>
           </div>
         </a>
       </div>
@@ -950,9 +986,6 @@
                             </a>
                         {/block:IndexPage}
                         {block:PermalinkPage}{LinkOpenTag}
-                            <!-- <a href="http://omniousmm.tumblr.com" target="_self"><i id="closeback" class="fa fa-times-circle-o close"></i></a> -->
-                            <!-- <a href="http://{Host}" target="_self"><i id="closeback" class="fa fa-times-circle-o close"></i></a> -->
-                            <!-- <a id="top" href="/" target="_self"> -->
                             <!-- <a id="top" class="closeback" href="/" target="_self"></a> -->
                             <a id="top" class="closeback" href="http://{Host}#content-wrapper" target="_self"></a>
                             <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
@@ -1155,34 +1188,14 @@
                                 </span>
                                 {/block:HasTags}
                                 <div class="actions">
-                                    <!-- <hr> -->
     <div class="mypostshare">
         <a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" target="_blank" class="icon-twitter" aria-hidden="true" data-icon="&#x54;"></a>
         <a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" target="_blank" class="icon-facebook" aria-hidden="true" data-icon="&#x46;"></a>
         <a href="https://plus.google.com/share?url={URLEncodedPermalink}" target="_blank" class="icon-googleplus" aria-hidden="true" data-icon="&#x47;"></a>
     </div>
     <div class="mypostslike">
-                                    <!-- <a href="{ReblogURL}" target="_blank" class="reblog_button" aria-hidden="true" data-icon="&#x292e;"></a> -->
       {LikeButton color="white"}{ReblogButton color="white"}
-                                    <!-- <div class="like-wrap"> -->
-                                        <!-- <i class="icon-love" aria-hidden="true" data-icon="&#x2665;"></i> -->
-                                        <!-- {LikeButton color="black" size="14"} -->
-                                    <!-- </div> -->
     </div>
-<!--                                    <div class="share-wrap">
-        <a href="#" class="share_button icon-share js-share action" aria-hidden="true"></a>
-        <a href="#" class="share_button icon-close js-share action" aria-hidden="true"></a>
-                                         <div class="share">
-                                            <a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" target="_blank" class="icon-twitter" aria-hidden="true" data-icon="&#x54;"></a>
-                                            <a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" target="_blank" class="icon-facebook" aria-hidden="true" data-icon="&#x46;"></a>
-                                            <a href="https://plus.google.com/share?url={URLEncodedPermalink}" target="_blank" class="icon-googleplus" aria-hidden="true" data-icon="&#x47;"></a>
-                                        </div>
-                                    </div>
--->                                    <!-- <div class="date"> -->
-                                        <!-- {block:Date} -->
-                                        <!-- <a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}, {Year}</a> -->
-                                        <!-- {/block:Date} -->
-                                    <!-- </div> -->
                                 </div>
                                 {PostNotes-16}
                                 </a>
@@ -1194,20 +1207,15 @@
             </div><!-- END CONTENT -->
             {block:IndexPage}
             <div class="bottom-nav {block:SearchPage}hide{/block:SearchPage}{block:TagPage}hide{/block:TagPage}">
-                <!-- <a href="#container" aria-hidden="true" data-icon="&#x25b2;" class="scroll-top{block:NoSearchResults} hide{/block:NoSearchResults}"></a> -->
                 <!-- <a href="#container" class="scroll-top{block:NoSearchResults} hide{/block:NoSearchResults}"></a> -->
-                <!-- <br> -->
-                <!-- <a href="#" class="load-more" aria-hidden="true" data-icon="&#x25bc;" ></a> -->
                 <a href="#" class="load-more"></a>
             </div>
             <div class="pagination {block:SearchPage}show{/block:SearchPage}{block:TagPage}show{/block:TagPage}">
                 {block:PreviousPage}
-                <!-- <a href="{PreviousPage}" class="prev" aria-hidden="true" data-icon="&#x25c4;"></a> -->
                 <a href="{PreviousPage}" class="prev"></a>
                 {/block:PreviousPage}
                 <a href="#" aria-hidden="true" data-icon="&#x25b2;" class="scroll-top{block:NoSearchResults} hide{/block:NoSearchResults}"></a>
                 {block:NextPage}
-                <!-- <a href="{NextPage}" class="next" aria-hidden="true" data-icon="&#x25ba;"></a> -->
                 <a href="{NextPage}" class="next"></a>
                 {/block:NextPage}
             </div>
@@ -1215,12 +1223,10 @@
             {block:PermalinkPagination}
             <div class="pagination show">
                 {block:PreviousPost}
-                <!-- <a href="{PreviousPost}" class="prev" aria-hidden="true" data-icon="&#x25c4;"></a> -->
-                <a href="{PreviousPost}" class="prev"></a>
+                <a href="{PreviousPost}#container" class="prev"></a>
                 {/block:PreviousPost}
                 {block:NextPost}
-                <!-- <a href="{NextPost}" class="next" aria-hidden="true" data-icon="&#x25ba;"></a> -->
-                <a href="{NextPost}" class="next"></a>
+                <a href="{NextPost}#container" class="next"></a>
                 {/block:NextPost}
             </div>
             {/block:PermalinkPagination}
@@ -1251,9 +1257,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.53/responsiveslides.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
-<script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
+<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script> -->
+<!-- <script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script> -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
 
 <!-- custom scripts -->
@@ -1306,25 +1312,18 @@
         $('#videolink,#photolink').removeClass('set');
         $(this).addClass('set');
     });
+
     // Masonry init
-    var $grid = $('.grid').masonry({
-        percentPosition: true,
-        itemSelector: '.grid-item'
-    });
+    // var $grid = $('.grid').masonry({
+    //     percentPosition: true,
+    //     itemSelector: '.grid-item'
+    // });
+
     // Layout Masonry after each image loads
-    $grid.imagesLoaded().progress(function(){
-        $grid.masonry('layout');
-    });
-    // $('#container a.load-more').on('click',function(){
-        // redo the overlay code
-        // after imagesLoaded?
-        // $grid.imagesLoaded().progress(function(){
-            // overt();
-        // });
+    // $grid.imagesLoaded().progress(function(){
+    //     $grid.masonry('layout');
     // });
-    // $('.grid').on('load', '.post-content--padded',function(){
-        // $(this).slideUp();
-    // });
+
     $('.grid').on('mouseenter','.grid-item',function(){
         var $this = $(this);
         var $padded = $('.post-content--padded.overt');
@@ -1340,15 +1339,6 @@
         $this.find($hovered).fadeOut();
     });
 
-    // legal controls
-    // $('#footer').on('click', function(){
-      // $(this).animate({height:400},500,function(){
-          // $('body').scrollTo('#footer', {offsetTop:'250'});
-      // });
-    // })
-    // .on('mouseleave', function(){
-      // $('#footer').animate({height:50},250);
-    // });
     // Money drop easter egg code
     var cont = document.getElementById("container");
     var egg = document.getElementById("moneylink");
@@ -1364,8 +1354,6 @@
 
     function pour(){
         stoprain();
-        // money.style.display = "block";
-        // rain = window.setInterval(clones, getRandomInt(11,33));
         rain = window.setInterval(clones, getRandomInt(11,22));
         setTimeout(stoprain, 9000);
         // setTimeout(stoprain, getRandomInt(3000,6000));
@@ -1379,7 +1367,6 @@
     function clones(){
         dup = drop.cloneNode(true);
         dup.style.left = getRandomInt(1,100) + "%";
-        // money.appendChild(dup);
         cont.appendChild(dup);
         // console.log("bill added.");
 
@@ -1390,7 +1377,6 @@
             // console.log("bill removed!");
         }
 
-        // TweenMax.to(dup, getRandomInt(4,7), {top:"120%",onComplete:completeHandler});
         TweenMax.to(dup, getRandomInt(5,15), {top:"120%",onComplete:completeHandler});
         var t1 = new TimelineMax({repeat: getRandomInt(2,10)});
         t1.to(dup, getRandomInt(1,3),{left:"-="+getRandomInt(0,500),rotation:"+="+getRandomInt(0,180)})
@@ -1441,6 +1427,5 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
 {/block:IfGoogleAnalyticsID}
 {block:IfExtraScripts}{text:Extra Scripts}{/block:IfExtraScripts}
 <!--Theme version 3.0.2-->
-<!--Background patterns courtesy of subtlepatterns.com-->
 </body>
 </html>
