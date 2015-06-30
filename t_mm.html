@@ -102,7 +102,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <style>
     body {
-      background-color: #000;
+      background-color: #fff;
       /*font-family: {select:Body Font}, Arial, sans-serif;}*/
       font-family: 'Droid Sans', Arial, sans-serif; }
     h1, h2, h3, h4, .post-qoute blockquote, .search-results, .menu, .menu .nav-search form input, .menu-icon .title {font-family: {select:Header Font}, Arial, sans-serif;}
@@ -574,7 +574,7 @@
      display: none;
     }
     #footer{
-     background: #000 url(http://static.tumblr.com/b2vkqlh/FSmnq7hfq/footer_money.jpg) no-repeat;
+     background: #fff url(http://static.tumblr.com/b2vkqlh/PQwnqqkhm/footer_money.jpg) no-repeat;
      background-size: 100%;
      background-position: center bottom;
      height: 400px;
@@ -588,8 +588,7 @@
      /*z-index: 400;*/
     }
     #footer .copy{
-     /*background: url(http://static.tumblr.com/b2vkqlh/wPonq7igc/footer-block_copy.png) no-repeat;*/
-     background: url(http://static.tumblr.com/b2vkqlh/lBlnqket4/footer-block_copy.png) no-repeat;
+     background: url(http://static.tumblr.com/b2vkqlh/K2bnqqkji/footer-block_copy.png) no-repeat;
      background-size: 100%;
      height: 80%;
      width: 50%;
@@ -650,6 +649,19 @@
     .myhover.kristen{background-color:#bb76e1;background-color: rgba(188,118,225,.5)}
     .myhover.zach{background-color:#f5cb06;background-color: rgba(245,201,6,.5)}
 
+    a.closeback,
+    .bottom-nav a,
+    .pagination a{
+        box-shadow: 0 0 15px rgba(0,0,0,.35);
+        background-color: rgba(0,0,0,.35) !important;
+        border-radius: 50%;
+        margin: 10px !important;
+    }
+    a:hover.closeback,
+    .bottom-nav a:hover,
+    .pagination a:hover{
+        background-color: rgba(0,0,0,.15) !important;
+    }
     .bottom-nav a{
         margin: 2.5%;
         display: inline-block;
@@ -795,7 +807,7 @@
         height: 230px;
     }
     #footer .copy{
-        background: url(http://static.tumblr.com/b2vkqlh/OADnqkhyh/footer-block_copy_mobile.png) no-repeat;
+        background: url(http://static.tumblr.com/b2vkqlh/Du1nqqkl4/footer-block_copy_mobile.png) no-repeat;
         background-size: 100%;
         height: 100%;
         width: 100%;
@@ -881,7 +893,8 @@
 <body>
   <div id="container" class="container">
     <div id="billboard">
-        <video preload="auto" autoplay poster="http://static.tumblr.com/b2vkqlh/PtLnqik3a/header_masteminds.jpg" width="100%">
+        <!-- <video preload="auto" autoplay poster="http://static.tumblr.com/b2vkqlh/PtLnqik3a/header_masteminds.jpg" width="100%"> -->
+        <video preload="auto" autoplay width="100%">
             <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.webm" type="video/webm">
             <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.ogv" type="video/ogg">
             <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.mp4" type="video/quicktime">
@@ -974,6 +987,10 @@
                     {/block:Text}
                     {block:Photo}
                     <article class="grid-item post-photo" id="{PostID}">
+                        {block:PermalinkPage}{LinkOpenTag}
+                            <!-- <a id="top" class="closeback" href="/" target="_self"></a> -->
+                            <a id="top" class="closeback" href="http://{Host}#content-wrapper" target="_self"></a>
+                        {LinkCloseTag}{/block:PermalinkPage}
                         <div class="post-content">
                         {block:IndexPage}
                             <a href="{Permalink}#top">
@@ -986,8 +1003,6 @@
                             </a>
                         {/block:IndexPage}
                         {block:PermalinkPage}{LinkOpenTag}
-                            <!-- <a id="top" class="closeback" href="/" target="_self"></a> -->
-                            <a id="top" class="closeback" href="http://{Host}#content-wrapper" target="_self"></a>
                             <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
                             <div class="post-content--padded">
                                     {block:Caption}<p>{Caption}</p>{/block:Caption}
@@ -995,6 +1010,10 @@
                     {/block:Photo}
                     {block:Video}
                     <article class="grid-item post-video" id="{PostID}">
+                        {block:PermalinkPage}{LinkOpenTag}
+                            <!-- <a id="top" class="closeback" href="/" target="_self"></a> -->
+                            <a id="top" class="closeback" href="http://{Host}#content-wrapper" target="_self"></a>
+                        {LinkCloseTag}{/block:PermalinkPage}
                         <div class="post-content">
                         {block:IndexPage}
                             <a href="{Permalink}#top">
@@ -1007,7 +1026,6 @@
                             </a>
                         {/block:IndexPage}
                         {block:PermalinkPage}{LinkOpenTag}
-                            <a id="top" class="closeback" href="/" target="_self"></a>
                                 <div id="top" class="video-player">{Video-500}</div>
                                 <div class="post-content--padded">
                                     {block:Caption}<p>{Caption}</p>{/block:Caption}
@@ -1414,6 +1432,10 @@
   <style type="text/css">
     .fancybox-custom .fancybox-skin {
       box-shadow: 0 0 50px #222;
+    }
+    .fancybox-inner{
+        height: 576px !important;
+        overflow: hidden !important;
     }
   </style>
 
