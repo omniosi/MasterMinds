@@ -157,7 +157,7 @@
     }
     #billboard{
       /*height: 700px;*/
-      background: #fff url(http://static.tumblr.com/b2vkqlh/N7Ynqqn8n/header_masteminds_crop.jpg) no-repeat;
+      background: #fff url(http://static.tumblr.com/b2vkqlh/rzPnqrqj6/header_masteminds.jpg) no-repeat;
       background-position: center top;
       -webkit-background-size: 100% auto;
       background-size: 100% auto;
@@ -392,15 +392,17 @@
     .pagination a.prev,
     a.rslides_nav.prev{
       /*margin-left: 8px;*/
-      margin-left: 1%;
+      /*margin-left: 1%;*/
+      margin-left: 10px;
       background-position: left top;
     }
     .bottom-nav a.load-more,
     .pagination a.next,
     a.rslides_nav.next{
         left: auto;
-        background-position: 33.333% top ;
-        right: 1%;
+        background-position: 38px top ;
+        /*right: 1%;*/
+        right: 10px;
     }
     /*.bottom-nav a.scroll-top{ left: 43% }*/
     /*.bottom-nav a.load-more{ right: -43% }*/
@@ -741,12 +743,15 @@
             background-size: 100%;
             /*width: 16%;*/
             width: 50px;
+            width: 80px;
             /*height: 0;*/
             height: 35px;
+            height: 70px;
             left: 50%;
             /*margin-left: -6.25%;*/
             /*margin-left: -25px;*/
             margin-left: -22px;
+            margin-left: -32px;
             /*padding-bottom: 16%;*/
             padding-bottom: 0;
         }
@@ -782,10 +787,13 @@
         }
         a.rslides_nav.prev,
         a.rslides_nav.next{
-            /*-webkit-background-size: 75px;*/
-            /*background-size: 75px;*/
-            /*width: 37.5px;*/
-            /*height: 37.5px;*/
+            -webkit-background-size: 150px;
+            background-size: 150px;
+            width: 38px;
+            height: 38px;
+        }
+        a.rslides_nav.next{
+            background-position: -37.5px top;
         }
         /*a.rslides_nav.prev:hover{ background-position: left -38.5px; }*/
         /*a.rslides_nav.next:hover{ background-position: right -38.5px; }*/
@@ -799,18 +807,18 @@
     #synopsissec{
     }
     #footer{
-        background: #000 url(http://static.tumblr.com/b2vkqlh/2sZnqh7tf/footer_money_sm.jpg) no-repeat;
+        background: #fff url(http://static.tumblr.com/b2vkqlh/zXunqromd/footer_money_sm.jpg) no-repeat;
         background-size: 100%;
         background-position: center bottom;
         /*height: 40%;*/
-        height: 230px;
+        height: 300px;
     }
     #footer .copy{
         background: url(http://static.tumblr.com/b2vkqlh/Du1nqqkl4/footer-block_copy_mobile.png) no-repeat;
         background-size: 100%;
         height: 100%;
-        width: 100%;
-        margin: 0 0% 50px;
+        width: 70%;
+        margin: 0 15% 50px;
         font-size: 50%;
       }
         #mpaa,
@@ -893,10 +901,13 @@
   <div id="container" class="container">
     <div id="billboard">
         <video preload="auto" autoplay poster="http://static.tumblr.com/b2vkqlh/XqWnqqmhp/mastermind_still_header.jpg" width="100%">
-        <!-- <video preload="auto" autoplay width="100%"> -->
-            <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.webm" type="video/webm">
-            <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.ogv" type="video/ogg">
-            <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.mp4" type="video/quicktime">
+            <!-- <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.webm" type="video/webm"> -->
+            <source src="http://omnio.us/test/mm/MM_Clean2.webm" type="video/webm">
+            <!-- <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.ogv" type="video/ogg"> -->
+            <source src="http://omnio.us/test/mm/MM_Clean2.ogv" type="video/ogg">
+            <!-- <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.mp4" type="video/quicktime"> -->
+            <source src="http://omnio.us/test/mm/MM_Clean2.m4v
+            " type="video/quicktime">
         </video>
       <div id="poster">
         <img class="cast" src="http://static.tumblr.com/b2vkqlh/Vjunq7gyd/cast.png" alt="">
