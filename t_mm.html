@@ -654,6 +654,15 @@
       z-index: 10;
       display: none;
     }
+/*    .myhover:hover{
+      background:
+        url(http://static.tumblr.com/b2vkqlh/Colnqs0xw/plus-hover.png) no-repeat,
+        url(http://static.tumblr.com/b2vkqlh/X3jnqiudt/texture_over.png) no-repeat;
+          -webkit-background-size: 75px, cover;
+          background-size: 75px, cover;
+          background-position: center center, center center;
+    }
+*/
     .closeback{
         background: url(http://static.tumblr.com/b2vkqlh/ludnqhdq1/close-icon.png) no-repeat;
         -webkit-background-size: 100%;
@@ -737,6 +746,8 @@
     }
 
     @media screen and (max-width: 670px){
+        a:hover{color:#fff;}
+
         #billboard{
             background: url(http://static.tumblr.com/b2vkqlh/2hfnqq4dz/header_masteminds_mobile.jpg) no-repeat;
              -webkit-background-size: 100% auto;
@@ -805,7 +816,7 @@
         padding: 1.275em 2%;
         }
         .rslides_nav{
-            /*margin-top: -18.75px;*/
+            margin-top: -17.5px;
         }
         a.rslides_nav.prev,
         a.rslides_nav.next{
@@ -872,6 +883,11 @@
         }
     }
     @media screen and (max-width: 360px){
+        #poster #playbtn .ctatext{
+            width: 50px;
+            height: 35px;
+            margin-left: -22px;
+        }
         #syntext{
             background-position: -455px -113px;
         }
@@ -1403,7 +1419,8 @@
 
     function pour(){
         stoprain();
-        rain = window.setInterval(clones, getRandomInt(11,22));
+        // rain = window.setInterval(clones, getRandomInt(11,22));
+        rain = window.setInterval(clones, getRandomInt(1,22));
         setTimeout(stoprain, 9000);
         // setTimeout(stoprain, getRandomInt(3000,6000));
     };
@@ -1417,17 +1434,21 @@
         dup = drop.cloneNode(true);
         dup.style.left = getRandomInt(1,100) + "%";
         cont.appendChild(dup);
-        // console.log("bill added.");
+        console.log("bill added.");
 
         function completeHandler(){
             last = document.getElementsByClassName("drop")[1];
-            // money.removeChild(last);
-            cont.removeChild(last);
-            // console.log("bill removed!");
+
+            // if(last.style.top > "120%"){
+                cont.removeChild(last);
+                console.log("bill removed!");
+            // }
         }
 
         TweenMax.to(dup, getRandomInt(5,15), {top:"120%",onComplete:completeHandler});
         var t1 = new TimelineMax({repeat: getRandomInt(2,10)});
+        // var t0 = new TimelineMax({repeat: 120});
+        // t0.to(dup, 0.1, {top:"+=1%"});
         t1.to(dup, getRandomInt(1,3),{left:"-="+getRandomInt(0,500),rotation:"+="+getRandomInt(0,180)})
             .to(dup, getRandomInt(1,3),{left:"+="+getRandomInt(0,500),rotation:"-="+getRandomInt(0,180)});
         var t2 = new TimelineMax({repeat: getRandomInt(2,10)});
