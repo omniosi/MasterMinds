@@ -411,7 +411,7 @@
     }
     /*.bottom-nav a.scroll-top{ left: 43% }*/
     /*.bottom-nav a.load-more{ right: -43% }*/
-    .bottom-nav a.load-more{ left: 50%;margin-left: -2.5% }
+    .bottom-nav a.load-more{ left: 50%;margin-left: -37.5px !important}
     /*a.rslides_nav.prev:hover{ background-position: left -76px; }*/
     /*a.rslides_nav.next:hover{ background-position: right -76px; }*/
     .pagination a.prev:hover,
@@ -630,7 +630,7 @@
     }
     #filmratings{
         left: 50%;
-        width: 65px;
+        width: 70px;
         margin-left: -11px;
     }
     .photo .photo-wrapper-inner{
@@ -737,6 +737,9 @@
       #synopsissec img{
         /*width: 21%;*/
       }
+      #footer{
+        height: 500px;
+      }
    }
 
     @media screen and (max-width: 1024px){
@@ -839,30 +842,31 @@
     }
     #synopsissec{
     }
-    #footer{
-        background: #fff url(http://static.tumblr.com/b2vkqlh/zXunqromd/footer_money_sm.jpg) no-repeat;
-        background-size: 100%;
-        background-position: center bottom;
-        /*height: 40%;*/
-        height: 300px;
-    }
-    #footer .copy{
-        background: url(http://static.tumblr.com/b2vkqlh/Du1nqqkl4/footer-block_copy_mobile.png) no-repeat;
-        background-size: 100%;
-        height: 100%;
-        width: 70%;
-        margin: 0 15% 50px;
-        font-size: 50%;
-      }
-        #mpaa,
-        #filmratings{
-            bottom: 25px;
-            left: 31%;
-            width: 13%;
+        #footer{
+            background: #fff url(http://static.tumblr.com/b2vkqlh/zXunqromd/footer_money_sm.jpg) no-repeat;
+            background-size: 100%;
+            background-position: center bottom;
+            /*height: 40%;*/
+            /*height: 300px;*/
+            height: 250px;
+        }
+        #footer .copy{
+            background: url(http://static.tumblr.com/b2vkqlh/Du1nqqkl4/footer-block_copy_mobile.png) no-repeat;
+            background-size: 100%;
+            width: 400px;
+            height: 250px;
+            margin: 0 -200px 50px;
+            font-size: 50%;
+          }
+        #mpaa, #filmratings{
+            top: 195px;
+            margin-left: -75px;
+            height: 25px;
+            width: 50px;
         }
         #filmratings{
-            left: 46%;
-            width: 24%;
+            width: 90px;
+            margin-left: -15px;
         }
     }
     @media screen and (max-width: 500px){
@@ -882,12 +886,30 @@
             display: none;
         }
     }
-    @media screen and (max-width: 360px){
+    @media screen and (max-width: 400px){
         #poster #playbtn .ctatext{
             width: 50px;
             height: 35px;
             margin-left: -22px;
         }
+        #footer{
+            height: 200px;
+        }
+        #footer .copy{
+            width: 300px;
+            height: 200px;
+            margin: 0 -150px 50px;
+        }
+        #mpaa, #filmratings{
+            top: 145px;
+            margin-left: -58px;
+        }
+        #filmratings{
+            width: 70px;
+            margin-left: -12px;
+        }
+    }
+    @media screen and (max-width: 360px){
         #syntext{
             background-position: -455px -113px;
         }
@@ -967,7 +989,7 @@
           <span id="synopsislink" alt="Synopsis"></span>
         </div>
         <div class="mysocial">
-          <i id="moneylink" class="fa fa-usd" alt="$"></i>
+          <i id="moneylink" class="fa fa-usd pulse" alt="$"></i>
           <a href="{text:Twitter link}" target="_blank"><i class="fa fa-twitter" alt="Twitter"></i></a>
           <a href="{text:Facebook link}" target="_blank"><i class="fa fa-facebook" alt="Facebook"></i></a>
           <a href="{text:Vine link}" target="_blank"><i class="fa fa-vine" alt="vine"></i></a>
@@ -1453,7 +1475,7 @@
             .to(dup, getRandomInt(1,3),{left:"+="+getRandomInt(0,500),rotation:"-="+getRandomInt(0,180)});
         var t2 = new TimelineMax({repeat: getRandomInt(2,10)});
         t2.to(dup,getRandomInt(0.25,1),{height:0})
-            .to(dup,getRandomInt(0.25,1),{height:30})
+            .to(dup,getRandomInt(0.25,1),{height:30});
     }
     function cleanup(){
         most = document.getElementsByClassName("drop");
@@ -1477,6 +1499,13 @@
     }
     // billboard video end
 
+        // pulse animation
+        var p1 = new TimelineMax({repeat: 3,delay: 1});
+
+        p1
+            .to(egg,0.3,{color:"#fff",scaleX:1,scaleY:1})
+            .to(egg,0.3,{color:"#000",scaleX:1.5,scaleY:1.5})
+            .to(egg,0.3,{color:"#fff",scaleX:1,scaleY:1});
     });
   });
   </script>
