@@ -164,12 +164,20 @@
       position: relative;
       overflow: hidden;
     }
-    #billboard video{
+    #billboard video,
+    #billboard #player{
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 10;
+    }
+    #billboard #player{
+        background: #fff url(http://static.tumblr.com/b2vkqlh/XqWnqqmhp/mastermind_still_header.jpg) no-repeat;
+        background-position: center top;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+        height: 100%;
     }
     #poster{
       width: 40%;
@@ -960,15 +968,13 @@
 <body>
   <div id="container" class="container">
     <div id="billboard">
-        <video preload="auto" autoplay poster="http://static.tumblr.com/b2vkqlh/XqWnqqmhp/mastermind_still_header.jpg" width="100%">
-            <!-- <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.webm" type="video/webm"> -->
+<!--         <video preload="auto" autoplay poster="http://static.tumblr.com/b2vkqlh/XqWnqqmhp/mastermind_still_header.jpg" width="100%">
             <source src="http://omnio.us/test/mm/MM_Clean2.webm" type="video/webm">
-            <!-- <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.ogv" type="video/ogg"> -->
             <source src="http://omnio.us/test/mm/MM_Clean2.ogv" type="video/ogg">
-            <!-- <source src="http://omnio.us/test/mm/MM_Clean_2500x1110.mp4" type="video/quicktime"> -->
             <source src="http://omnio.us/test/mm/MM_Clean2.m4v
             " type="video/quicktime">
         </video>
+ -->        <div id="player"></div>
       <div id="poster">
         <img class="cast" src="http://static.tumblr.com/b2vkqlh/Vjunq7gyd/cast.png" alt="">
         <img class="title" src="http://static.tumblr.com/b2vkqlh/qLpnqiktj/masterminds-movie.png" alt="Masterminds">
@@ -1490,13 +1496,13 @@
     $(document).ready(function(){
 
     // billboard video
-    var billboard = document.getElementById("billboard");
-    var topvid = billboard.getElementsByTagName("video")[0];
+    // var billboard = document.getElementById("billboard");
+    // var topvid = billboard.getElementsByTagName("video")[0];
 
-    topvid.onended = function(){
-        // console.log("video ended!");
-        $('#billboard').find('video').fadeOut();
-    }
+    // topvid.onended = function(){
+    //     // console.log("video ended!");
+    //     $('#billboard').find('video').fadeOut();
+    // }
     // billboard video end
 
         // pulse animation
@@ -1509,6 +1515,41 @@
     });
   });
   </script>
+<script>
+        // youTube video API code
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    // tag.src = "//www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var player;
+    function onYouTubeIframeAPIReady(){
+        player = new YT.Player('player', {
+            height:'568',
+            width:'1280',
+            videoId: '7IfqF1MRdOE',
+            playerVars: {'modestbranding':1,'title':'','autoplay':1,'controls':0,'rel':0,'showinfo':0,'playsinline':1},
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        })
+    }
+    function onPlayerReady(event){
+        event.target.playVideo();
+    }
+    function onPlayerStateChange(event){
+        // event.target
+        // if(event.data == 0){
+        if(event.data == YT.PlayerState.ENDED){
+            $('#billboard').find('iframe').fadeOut();
+            console.log("youtube video ended!")
+        }
+    }
+    // youTube video API code end
+
+</script>
+
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
   <style type="text/css">
     .fancybox-custom .fancybox-skin {
